@@ -107,7 +107,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans    &trans    &mkp MB3  &trans    &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp AMPERSAND  &kp SQT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB4  &mkp MB1  &mo 5     &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB5  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans
