@@ -67,10 +67,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W         &kp E         &kp R                        &kp T                                                 &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))             &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                        &kp B        &kp COLON                 &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 4 SPACE  &lt_to_layer_0 3 GRAVE    &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
+&kp Q               &kp W         &kp E         &kp R                        &kp T                                                     &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))             &kp MINUS          &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z    &kp X         &kp C         &kp V                        &kp B        &kp LBKT                  &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 4 SPACE  &lt_to_layer_0 3 GRAVE    &kp BACKSPACE      &lt 2 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -107,10 +107,10 @@
 
         MOUSE {
             bindings = <
-&kp EXCLAMATION         &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR  &kp PERCENT                             &kp AMPERSAND  &kp SQT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&mt LEFT_CONTROL LC(A)  &kp LC(S)          &kp LC(D)  &kp LC(F)   &kp UP_ARROW  &trans    &trans          &mkp MB4       &mkp MB1  &mo 5                 &mkp MB2               &trans
-&mt LEFT_SHIFT LC(Z)    &kp LC(X)          &kp LC(C)  &kp LC(V)   &kp DOWN      &trans    &trans          &mkp MB5       &trans    &trans                &trans                 &kp LS(LG(S))
-&trans                  &trans             &trans     &trans      &trans        &trans    &kp LEFT_ARROW  &kp RIGHT                                                             &trans
+&kp EXCLAMATION         &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT                             &kp AMPERSAND  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&mt LEFT_CONTROL LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)   &kp UP_ARROW  &trans    &trans          &mkp MB4       &mkp MB1   &mo 5                 &mkp MB2               &kp COLON
+&mt LEFT_SHIFT LC(Z)    &kp LC(X)  &kp LC(C)  &kp LC(V)   &kp DOWN      &trans    &trans          &mkp MB5       &trans     &kp LT                &kp GT                 &kp QUESTION
+&trans                  &trans     &trans     &trans      &trans        &trans    &kp LEFT_ARROW  &kp RIGHT                                                              &kp LG(LS(S))
             >;
         };
 
@@ -138,6 +138,24 @@
 &trans           &trans             &trans    &trans      &trans       &trans    &trans  &trans         &trans   &trans                &trans                 &trans
 &trans           &trans             &trans    &trans      &trans       &trans    &trans  &trans         &trans   &trans                &trans                 &trans
 &trans           &trans             &trans    &trans      &trans       &trans    &trans  &trans                                                               &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
         };
     };
